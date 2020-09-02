@@ -103,12 +103,28 @@ return [
             ],
         ],
 
+        'inline_2' => [
+            'exclude' => 1,
+            'label' => 'inline_2 max_items=3',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_styleguide_inline_expand_inline_1_child',
+                'foreign_field' => 'parentid_2',
+                'foreign_table_field' => 'parenttable',
+                'minitems' => 1,
+                'maxitems' => 3,
+                'appearance' => [
+                    'collapseAll' => 1
+                ],
+            ],
+        ],
+
     ],
 
     'types' => [
         '0' => [
             'showitem' => '
-                inline_1,
+                inline_1,inline_2
             ',
         ],
     ],
